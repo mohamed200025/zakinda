@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure full height of page */
+html, body {
+    height: 80%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply background image */
+body {
+    background: url('images/1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: sans-serif;
+    color: white; /* optional, if your image is dark */
+}
+
+/*logo*/
+.logo{
+  font-family: 'Poppins', sans-serif; /* Clean, modern font */
+  font-size: 80px;
+  font-weight: 700; /* Bold */
+  letter-spacing: 2px;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* subtle depth */
+  margin: 70px;
+  padding: 0;
+  cursor: default;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.logo:hover{
+    transform: scale(1.05); /* slight zoom on hover */
+  color: rgb(16, 240, 72); /* or any brand color */
+}
+
+
+.container {
+    width: 1900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+form {
+    display: flex;
+    align-items: center;
+    gap: 300px; /* space between file circle and button */
+}
+
+.container button {
+    margin-left: 100px;
+}
+
+input[type="file"] {
+    display: none; /* Hides the default file input */
+}
+
+.custom-file-upload {
+    display: flex; /* center content */
+    align-items: center; /* vertical center */
+    justify-content: center; /* horizontal center */
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 50%; /* circle */
+    cursor: pointer;
+    margin-right: 10px;
+    width: 300px;
+    height: 300px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.custom-file-upload:hover{
+     transform: scale(1.5); /* slight zoom on hover */
+}
+
+.custom-file-upload p{
+    margin: 0; /* remove default h2 margin */
+    font-size: 30px;
+}
+
+
+
+/* New styles for the upload button */
+.upload-btn {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #28a745; /* green */
+    color: white;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+     position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+    margin-left: 100px;
+    
+}
+.upload-btn:hover{
+    transform: scale(1.5); /* slight zoom on hover */
+}
+
+
+ /* login styling*/
+ .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.login-form {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(255,255,255,0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login-form input[type="password"] {
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+.login-form button {
+    padding: 15px;
+    font-size: 18px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: #218838;
+}
+
+
+
